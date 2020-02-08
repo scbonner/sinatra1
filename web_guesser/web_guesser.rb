@@ -1,5 +1,12 @@
+# require "sinatra"
+
+# get '/' do
+#     "Hello, World"
+# end
+
 require "sinatra"
+require "sinatra/reloader"
 
 get '/' do
-    "Hello, World"
-end
+    "Good, Morning!"
+end 
