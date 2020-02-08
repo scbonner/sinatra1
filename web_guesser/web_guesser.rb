@@ -5,8 +5,7 @@
 # end
 
 require "sinatra"
-require "sinatra/reloader"
-
+  require "sinatra/reloader"
 get '/' do
-    "The SECRET NUMBER is X"
+    erb :index, :locals => {:number => number}
 end 
