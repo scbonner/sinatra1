@@ -8,5 +8,5 @@ require "sinatra"
 require "sinatra/reloader"
 
 get '/' do
-    "Good, Morning!"
+    "The SECRET NUMBER is X"
 end 
