@@ -28,15 +28,14 @@ get '/' do
 end
 
 a = "yes"
-
 get "/other" do
-    if a == "yes"
-      "<h1>Yes</h1>"
-    else
-      "<h1>No</h1>"
-    end
+  if a == "yes"
+    "<h1>Yes</h1>"
+  else
+    "<h1>No</h1>"
   end
+end
 
-post "/submitted" do
-  "I'm getting there: #{params['message']}" 
-end 
+# post "/submitted" do
+#   "I'm getting there: #{params['message']}" 
+# end 
