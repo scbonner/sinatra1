@@ -1,7 +1,14 @@
-<form action="/submitted" method="GET">
-    Message:
-    <input type="text" name="message">
-    <input type="submit" value="Send">
-  </form>
-
+require 'sinatra'
+get '/getdoc' do
+<!DOCTYPE html>
+    <html>
+        <head></head>
+        <body>
+        <form action="/" method="GET">
+            Message:Today is the day!
+            <input type="text" name="message">
+            <input type="submit" value="Send">
+          </form>    
+        </body>
+    </html>
 

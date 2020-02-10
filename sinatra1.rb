@@ -4,28 +4,33 @@
 # # The section of the program would look like this, with a
 # # multi-line string for all the html:
 
-# require 'sinatra'
- 
-# get "/getdoc" do
-#   "<!DOCTYPE html>
-#   <html>
-#   <style>
-#   body {
-#   color: red; 
-#   }
-#   </style>
-#   <body>
-#     <h1>Hello There</h1>
-#     <p>
-#       … your stuff goes here ..
-#     </p>
-#   </body>
-#   </html>"
-# end
-require "sinatra"
+require 'sinatra'
 get '/' do
-  "Hello, World!"
-end
+"<!DOCTYPE html>
+  <html>
+   <head></head>
+   <body>
+    color: red
+     <h1>Hello There</h1>
+     <p>your stuff goes here</p>
+   </body>
+  </html>"
+ end
+ 
+# require "sinatra"
+# get '/' do
+#   "Hello, World!"
+# end
+
+# require "sinatra"
+#   get '/' do
+#   "Hello Code The Dream"
+#   end
+  
+# post "/submitted" do
+#     "Hello Tic Tac Toe"
+#   end
+
 
 # a = "yes"
 # get "/other" do
