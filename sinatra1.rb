@@ -1,3 +1,30 @@
+# <!--Create a form called logon.html in your public directory-->
+# <!--with with input fields username and password.  The form should-->
+# <!--use the POST method for the route “/logon”. Create a sinatra block-->
+# <!--for “/logon” that returns "SUCCESS" if the username is "bob" and-->
+# <!--the password is "pass".  Return "FAILURE" otherwise.  Be sure to-->
+# <!--try it out using your browser window.-->
+ 
+require 'sinatra'   
+get '/logon' do
+  title = "To Do / Logon"
+  erb :login, locals: {title: title}
+end
+
+# post "/logon" do
+#   title = "To Do / Logon"
+#   user = db.authenticate(email: params[:email], password: params[:password])
+#   if user
+#     session[:email] = user.email
+#     redirect "/"
+#   else
+#     erb :login, locals: {title: title}
+#   end
+# end
+
+
+
+
 # # Sinatra Exercise 1
 # In sinatra1.rb, create a sinatra action “/getdoc” that returns 
 # # a short but complete html document. In the html document, make 
