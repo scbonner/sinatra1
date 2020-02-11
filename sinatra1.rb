@@ -9,10 +9,10 @@ get '/' do
 "<!DOCTYPE html>
   <html>
    <head></head>
+   {color: red}
    <body>
-    color: red
      <h1>Hello There</h1>
-     <p>your stuff goes here</p>
+     <p>Cannot take a break until I get this!</p>
    </body>
   </html>"
  end
