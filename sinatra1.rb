@@ -1,14 +1,23 @@
+# Logon Excercise
 # <!--Create a form called logon.html in your public directory-->
 # <!--with with input fields username and password.  The form should-->
 # <!--use the POST method for the route “/logon”. Create a sinatra block-->
 # <!--for “/logon” that returns "SUCCESS" if the username is "bob" and-->
 # <!--the password is "pass".  Return "FAILURE" otherwise.  Be sure to-->
 # <!--try it out using your browser window.-->
+
+require 'sinatra' 
+get '/' do
+ end
  
-require 'sinatra'   
-get '/logon' do
-  title = "To Do / Logon"
-  erb :login, locals: {title: title}
+post '/logon' do
+  name = params[:username]
+  pass = params[:password]
+  if name == "Bob" && pass == "pass"
+    "SUCCESS"
+  else 
+    "FAILURE"
+  end
 end
 
 # post "/logon" do
