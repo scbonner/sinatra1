@@ -50,15 +50,32 @@
 # end
 
 
-require 'sinatra'    #Submitting a Form: POST
+# require 'sinatra'    #Submitting a Form: POST
+#   get '/' do
+#   end 
+  
+# post '/submitted' do
+#   name = params[:message]
+#   end
+
+# Submitting a Form: Post (3)
+
+# We have to code what the server will return when a POST "/submitted" request is made.
+require 'sinatra'
   get '/' do
   end 
-  
+
 post '/submitted' do
-  name = params[:message]
-  end
+    if params[:message] == "I'm getting there"
+      "Thank you"
+    else
+      "I don't understand"
+    end
+end
 
-
+# Add this section to sinatra1.rb (you have to 
+# restart it between changes to the code) and 
+# try the submit button for post_it.html one more time.
 
 
 # require "sinatra"
@@ -88,14 +105,3 @@ post '/submitted' do
 
 # Submitting a Form: Post (3)
 
-# post "/submitted" do
-#     "I'm getting there: #{params['message']}" 
-#   end 
-
-post "/submitted" do
-    if params[:message] == "I'm getting there:"
-      "Thank you"
-    else
-      "I don't understand"
-    end
-  end
