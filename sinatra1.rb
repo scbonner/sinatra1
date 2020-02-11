@@ -5,23 +5,23 @@
 # # The section of the program would look like this, with a
 # # multi-line string for all the html:
 
-require 'sinatra'
-get '/' do
-"<!DOCTYPE html>
-  <html>
-   <head></head>
-   <style>
-   body {
-   color: red;
-   }
-   </style>
-   <body>
-     <h1>Hello There</h1>
-     <p>Cannot take a break until I get this!</p>
-     <p>Well I got it! Let me save before I forget.</p>
-   </body>
-  </html>"
- end
+# require 'sinatra'
+# get '/' do
+# "<!DOCTYPE html>
+#   <html>
+#   <head></head>
+#   <style>
+#   body {
+#   color: red;
+#   }
+#   </style>
+#   <body>
+#      <h1>Hello There</h1>
+#      <p>Cannot take a break until I get this!</p>
+#      <p>Well I got it! Let me save before I forget.</p>
+#   </body>
+#   </html>"
+#  end
  
 # require "sinatra"
 # get '/' do
@@ -47,6 +47,17 @@ get '/' do
 #   end
 # end
 
+
+# Submitting a Form: Post (3)
+
 # post "/submitted" do
-#   "I'm getting there: #{params['message']}" 
-# end 
+#     "I'm getting there: #{params['message']}" 
+#   end 
+
+post "/submitted" do
+    if params[:message] == "I'm getting there:"
+      "Thank you"
+    else
+      "I don't understand"
+    end
+  end
