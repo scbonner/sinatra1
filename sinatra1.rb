@@ -1,4 +1,5 @@
-# # In sinatra1.rb, create a sinatra action “/getdoc” that returns 
+# # Sinatra Exercise 1
+# In sinatra1.rb, create a sinatra action “/getdoc” that returns 
 # # a short but complete html document. In the html document, make 
 # # the text color red by adding some styling to the document.  
 # # The section of the program would look like this, with a
@@ -9,10 +10,15 @@ get '/' do
 "<!DOCTYPE html>
   <html>
    <head></head>
-   {color: red}
+   <style>
+   body {
+   color: red;
+   }
+   </style>
    <body>
      <h1>Hello There</h1>
      <p>Cannot take a break until I get this!</p>
+     <p>Well I got it! Let me save before I forget.</p>
    </body>
   </html>"
  end
