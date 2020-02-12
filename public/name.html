@@ -1,0 +1,28 @@
+<!--Sinatra Exercise 3-->
+
+<!--Create a form name.html in your public directory-->
+<!--with a text field "name" that uses the action “/hello”,-->
+<!--a submit button, and the post method.  -->
+
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <form action="/hello" method="POST">
+        Message:
+        <input type="text" name="message">
+        <input type="submit" value="Send">
+    </form>
+  </body>
+</html>
+
+<!--In sinatra1.rb create a post block for “/hello” that saves -->
+<!--the name to the session and returns a message “Saved the name”.  -->
+
+<!--Create another sinatra get block “/greet” that returns a -->
+<!--greeting for the user, including their name, retrieving -->
+<!--the name from the session.  -->
+
+<!--Be sure to try it out by running your sinatra program.-->
+<!--Commit your files and push your sinatra1 directory to github.-->
+

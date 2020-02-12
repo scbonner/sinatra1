@@ -25,23 +25,5 @@
 # message = "The given email address "#{address}" does not look like a valid email address."
 # puts message
 
-people = %w(
-  Anne
-  Elizabeth
-  Erica
-  Iryna
-  Johanna
-  Juliane
-  Katja
-  Katrin
-  Maria
-  Renate
-  Sureka
-  Miriam
-  Zazie
-  Anja
-)
-people.shuffle.each_slice(2) do |pair|
-  puts pair.join(', ')
-end
+
 
