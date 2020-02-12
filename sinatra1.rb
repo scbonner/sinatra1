@@ -136,18 +136,19 @@
 # for “/hello” that saves the name to the session and
 # returns a message “Saved the name”. 
 
-
-require 'sinatra'    #Submitting a Form: POST
-  get '/' do
-  end 
-  
-post '/hello' do
-  name = params[:message]
-  end
-
 # Create another sinatra get block “/greet” that 
 # returns a greeting for the user, including their name, 
 # retrieving the name from the session. 
 
 # Be sure to try it out by running your sinatra program.
 # Commit your files and push your sinatra1 directory to github.
+
+
+require 'sinatra'    #Submitting a Form: POST
+  get '/' do
+   end 
+  
+post '/hello' do
+  name = params[:message]
+   "Saved the name”
+   end
