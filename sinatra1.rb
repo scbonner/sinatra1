@@ -150,5 +150,4 @@ require 'sinatra'    #Submitting a Form: POST
   
 post '/hello' do
   name = params[:message]
-   "Saved the name”
    end
