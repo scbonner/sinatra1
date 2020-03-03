@@ -1,15 +1,16 @@
 
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
-       <p>Just adding test text</p> 
-       <%= Hello Jack %>
-       <% end %>
-    </body>
+  <head></head>
+  <body>
+    <form action="/candles" method="POST">
+        Message: What number of candles do you?
+        <input type="number" name="message">
+        <input type="submit" value="Send">
+    </form>
+  </body>
 </html>
-    
-    
+
 
 Inside your sinatra1 directory on Cloud9, create a 
 views directory.  Within that, create two .erb files.
