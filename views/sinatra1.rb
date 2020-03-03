@@ -160,8 +160,8 @@ get '/' do
     erb :howmany
 end 
 
-post '/' do
-    # @number = params[:number].to_i
+post '/candles' do
+    @number = params[:number].to_i
     erb :candles
 end
     

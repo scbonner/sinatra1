@@ -144,10 +144,37 @@
 # Commit your files and push your sinatra1 directory to github.
 
 
-require 'sinatra'    #Submitting a Form: POST
-  get '/' do
-   end 
+# require 'sinatra'    #Submitting a Form: POST
+#   get '/' do
+#   end 
   
-post '/hello' do
-  name = params[:message]
-   end
+# post '/hello' do
+#   name = params[:message]
+#   end
+
+
+require 'sinatra'
+require 'sinatra/reloader'
+
+get '/' do
+    erb :howmany
+end 
+
+post '/candles' do
+    @number = params[:number].to_i
+    erb :candles
+end
+    
+    
+# Inside your sinatra1 directory on Cloud9, create a 
+# views directory.  Within that, create two .erb files.
+# The first should be howmany.erb, and it should be a 
+# form that asks the user to enter the number of candles.
+# It should use the /candles action and the post method.
+# The second .erb file would be candles.erb, and it 
+# should display as many candles as the user requests.  
+# Then add the get ‘/howmany’ and post ‘/candles’ blocks
+# in sinatra1.rb.  Then try it out, to see if you can 
+# display the requested number of candles.
+
+
